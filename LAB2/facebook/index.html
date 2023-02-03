@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main1{
+           background-color: rgb(240, 242, 245);
+        }
+        .left{
+            float: left;
+        }
+        .facebook{
+            /* float: left; */
+            position: relative;
+            height: 100px;
+            font-weight: 320px;
+            left: 155px;
+            top:190px;
+        }
+        .info{
+            position: absolute;
+            font-size: 25px;
+            font-weight: 100;
+            left:41px;
+            top:145px;
+            font-family: "Verdana"
+        }
+        .form{
+            position: absolute;
+            border-radius: 8px;
+            width: 420px;
+            height: 350px;
+            left: 850px;
+            top:140px;
+            background-color: rgb(252, 250, 250);
+            border-color:white;  
+            box-shadow: 0 0 15px #cacaca;
+        }
+        .tel{
+            position: absolute;
+            top: 20px;
+            width: 410px;
+            height: 40px;
+            border-color: #c6c6c6;
+            border-radius: 8px;
+            border-width: 1px;
+        }
+        .pas{
+            position: absolute;
+            top: 80px;
+            width: 410px;
+            height: 40px;
+            border-color: #d1d1d1;
+            border-radius: 8px;
+            border-width: 1px;
+        }
+        .vhod{
+            background-color:rgb(24, 119, 242);
+            position: absolute;
+            top: 140px;
+            width: 419px;
+            height: 45px;
+            border-radius: 8px;
+            border-color: rgb(24, 119, 242);
+            color: white;
+            font-weight: 550;
+        }
+        .forgot{
+            position: absolute;
+            top: 205px;
+            left: 146px;
+            color: rgb(24, 119, 242);
+            text-decoration: none;
+            font-family: "Verdana"
+        }
+        .palka{
+            position: absolute;
+            top: 240px;
+            left: 19px;
+            width: 410px;
+            border-radius: 10%;
+            border-color: #ffffff;;
+            border-width: 1px;
+        }
+        .right{
+            position:absolute;
+            left:-60px 
+        }
+        .sozdat{
+            background-color:rgb(101, 183, 66);
+            position: absolute;
+            top: 280px;
+            width: 200px;
+            height: 52px;
+            border-radius: 8px;
+            border-color: rgb(101, 183, 66);
+            color: white;
+            left: 126px;
+            font-family: "Verdana"
+        }
+        .text1{
+            top: 540px;
+            left: 190px;
+            position: absolute;
+            font-family: "Verdana";
+            font-size: 15px;
+            
+        }
+        .create{
+            text-decoration: none;
+            color: black;
+        }
+        .lan{
+            position: absolute;
+            top:750px;
+            left: 200px;
+            font-size: 12px;
+            color: #969696;
+            font-family: "Verdana";
+            list-style: none;
+            display:inline - block;
+            overflow:auto;
+        }
+        .lan2{
+            position: absolute;
+            top:790px;
+            left: 200px;
+            font-size: 12px;
+            color: #969696;
+            font-family: "Verdana";
+            list-style: none;
+            display:inline - block;
+            overflow:auto;
+        }
+        .nav_button {display:inline-block;margin: 5px;}
+        .plus{
+            position: absolute;
+            top:765px;
+            left:983px;
+            height: 18px;
+            font-weight: 10px;
+            border-color: #c6c6c6;
+            border-radius: 2px;
+            border-width: 0.5px;
+        }
+        .palka2{
+            position: absolute;
+            top: 785px;
+            left: 246px;
+            width: 960px;
+            border-radius: 10%;
+            border-color: #ffffff;;
+            border-width: 0.5px;
+        }
+    </style>
+</head>
+<body>
+    <dev class = "main1">
+        <dev class = "left">
+            <img class = "facebook" src = "https://i.ibb.co/yQmWycD/logo-facebookpng-32251.png">
+            <pre class = "info">
+                Facebook помогает вам всегда 
+                оставаться на связи и общаться со
+                своими знакомыми</pre>
+        </dev>
+        <dev class = "right">
+            <fieldset class = "form">
+                <input class = "tel" type ="text" placeholder="         Электронный адрес или номер телефона">
+                <input class = "pas" type ="password" placeholder="         Пароль">
+                <button class = "vhod" type = "submit">Вход</button>
+                <a class = "forgot" href="">Забыли пароль?</a>
+                <hr class = "palka">
+                <button class = "sozdat" type = "submit">Создать аккаунт</button>
+            </fieldset>
+        </dev>
+
+
+        <pre class = "text1"><a class = "create" href = ""><strong>Создать Страницу</strong></a> знаменитости, музыкальной группы 
+                                или компании.</pre>
+    </dev>
+
+
+
+    <footer>
+        <ul class = "lan">
+            <li class="nav_button">English (UK)
+            </li>
+            <li class="nav_button">Русский
+            </li>
+            <li class="nav_button">Türkçe
+            </li>
+            <li class="nav_button">Bahasa Indonesia
+            </li>
+            <li class="nav_button">中文(简体)
+            </li>
+            <li class="nav_button">Deutsch
+            </li>
+            <li class="nav_button">한국어
+            </li>
+            <li class="nav_button">Shqip
+            </li>
+            <li class="nav_button">
+                Español
+            </li>
+            <li class="nav_button">
+                Português (Brasil)
+            </li>
+        </ul>
+
+        <button class = "plus" type = "menu">+</button>
+        <hr class = "palka2">
+
+        <ul class = "lan2">
+            <li class="nav_button">Sign Up
+            </li>
+            <li class="nav_button">Log in
+            </li>
+            <li class="nav_button">Messenger
+            </li>
+            <li class="nav_button">Facebook Lite
+            </li>
+            <li class="nav_button">Watch
+            </li>
+            <li class="nav_button">Places
+            </li>
+            <li class="nav_button">Games
+            </li>
+            <li class="nav_button">Marketplace
+            </li>
+            <li class="nav_button">
+                Meta Pay
+            </li>
+            <li class="nav_button">
+                Oculus
+            </li>
+            <li class="nav_button">
+                Portal
+            </li>
+            <li class="nav_button">
+                Instagram
+            </li>
+            <li class="nav_button">
+                Bulletin
+            </li>
+            <li class="nav_button">
+                Fundraisers
+            </li>
+            <br>
+            <li class="nav_button">
+                Services
+            </li>
+            <li class="nav_button">
+                Voting Information Centre
+            </li>
+            <li class="nav_button">
+                Privacy Policy
+            </li>
+            <li class="nav_button">
+                Privacy Centre
+            </li>
+            <li class="nav_button">
+                Groups
+            </li>
+            <li class="nav_button">
+                About
+            </li>
+            <li class="nav_button">
+                Create ad
+            </li>
+            <li class="nav_button">
+                Create Page
+            </li>
+            <li class="nav_button">
+                Developers
+            </li>
+            <li class="nav_button">
+                Careers
+            </li>
+            <li class="nav_button">
+                Cookies
+            </li>
+            <br>
+            <li class="nav_button">
+                AdChoices
+            </li>
+            <li class="nav_button">
+                Terms
+            </li>
+            <li class="nav_button">
+                Help
+            </li>
+            <li class="nav_button">
+                Contact uploading and non-usersSettingsActivity log
+            </li>
+            
+
+
+        </ul>
+    </footer>
+    
+    
+</body>
+</html>
