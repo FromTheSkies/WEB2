@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Facebook</title>
     <style>
+        .fot{
+            background-color: #ffffff;
+        }
         .main1{
            background-color: rgb(240, 242, 245);
         }
@@ -40,13 +43,14 @@
             box-shadow: 0 0 15px #cacaca;
         }
         .tel{
+
             position: absolute;
             top: 20px;
             width: 410px;
             height: 40px;
             border-color: #c6c6c6;
             border-radius: 8px;
-            border-width: 1px;
+            border-width: 0.5px;
         }
         .pas{
             position: absolute;
@@ -55,18 +59,30 @@
             height: 40px;
             border-color: #d1d1d1;
             border-radius: 8px;
-            border-width: 1px;
+            border-width: 0.5px;
         }
-        .vhod{
+        .vhod1{
             background-color:rgb(24, 119, 242);
             position: absolute;
             top: 140px;
-            width: 419px;
+            width: 417px;
             height: 45px;
+            left: 15px;
             border-radius: 8px;
             border-color: rgb(24, 119, 242);
             color: white;
             font-weight: 550;
+            text-decoration: none;
+            /* vertical-align: center;
+            text-align: center; */
+        }
+        .vhod{
+            color: white;
+            text-decoration: none;
+        }
+        .sozdat{
+            color: white;
+            text-decoration: none;
         }
         .forgot{
             position: absolute;
@@ -89,7 +105,7 @@
             position:absolute;
             left:-60px 
         }
-        .sozdat{
+        .sozdat1{
             background-color:rgb(101, 183, 66);
             position: absolute;
             top: 280px;
@@ -99,7 +115,8 @@
             border-color: rgb(101, 183, 66);
             color: white;
             left: 126px;
-            font-family: "Verdana"
+            font-family: "Verdana";
+            text-decoration: none;
         }
         .text1{
             top: 540px;
@@ -121,7 +138,7 @@
             color: #969696;
             font-family: "Verdana";
             list-style: none;
-            display:inline - block;
+            /* display:inline - block; */
             overflow:auto;
         }
         .lan2{
@@ -170,10 +187,10 @@
             <fieldset class = "form">
                 <input class = "tel" type ="text" placeholder="         Электронный адрес или номер телефона">
                 <input class = "pas" type ="password" placeholder="         Пароль">
-                <button class = "vhod" type = "submit">Вход</button>
+                <button class = "vhod1" type = "submit"><a class = "vhod" href="">Вход</a></button>
                 <a class = "forgot" href="">Забыли пароль?</a>
                 <hr class = "palka">
-                <button class = "sozdat" type = "submit">Создать аккаунт</button>
+                <button class = "sozdat1" type = "submit"><a class = "sozdat" href="">Создать аккаунт</a></button>
             </fieldset>
         </dev>
 
@@ -184,7 +201,7 @@
 
 
 
-    <footer>
+    <footer class = "fot">
         <ul class = "lan">
             <li class="nav_button">English (UK)
             </li>
@@ -303,4 +320,120 @@
     
     
 </body>
+<footer class = "fot">
+        <ul class = "lan">
+            <li class="nav_button">English (UK)
+            </li>
+            <li class="nav_button">Русский
+            </li>
+            <li class="nav_button">Türkçe
+            </li>
+            <li class="nav_button">Bahasa Indonesia
+            </li>
+            <li class="nav_button">中文(简体)
+            </li>
+            <li class="nav_button">Deutsch
+            </li>
+            <li class="nav_button">한국어
+            </li>
+            <li class="nav_button">Shqip
+            </li>
+            <li class="nav_button">
+                Español
+            </li>
+            <li class="nav_button">
+                Português (Brasil)
+            </li>
+        </ul>
+
+        <button class = "plus" type = "menu">+</button>
+        <hr class = "palka2">
+
+        <ul class = "lan2">
+            <li class="nav_button">Sign Up
+            </li>
+            <li class="nav_button">Log in
+            </li>
+            <li class="nav_button">Messenger
+            </li>
+            <li class="nav_button">Facebook Lite
+            </li>
+            <li class="nav_button">Watch
+            </li>
+            <li class="nav_button">Places
+            </li>
+            <li class="nav_button">Games
+            </li>
+            <li class="nav_button">Marketplace
+            </li>
+            <li class="nav_button">
+                Meta Pay
+            </li>
+            <li class="nav_button">
+                Oculus
+            </li>
+            <li class="nav_button">
+                Portal
+            </li>
+            <li class="nav_button">
+                Instagram
+            </li>
+            <li class="nav_button">
+                Bulletin
+            </li>
+            <li class="nav_button">
+                Fundraisers
+            </li>
+            <br>
+            <li class="nav_button">
+                Services
+            </li>
+            <li class="nav_button">
+                Voting Information Centre
+            </li>
+            <li class="nav_button">
+                Privacy Policy
+            </li>
+            <li class="nav_button">
+                Privacy Centre
+            </li>
+            <li class="nav_button">
+                Groups
+            </li>
+            <li class="nav_button">
+                About
+            </li>
+            <li class="nav_button">
+                Create ad
+            </li>
+            <li class="nav_button">
+                Create Page
+            </li>
+            <li class="nav_button">
+                Developers
+            </li>
+            <li class="nav_button">
+                Careers
+            </li>
+            <li class="nav_button">
+                Cookies
+            </li>
+            <br>
+            <li class="nav_button">
+                AdChoices
+            </li>
+            <li class="nav_button">
+                Terms
+            </li>
+            <li class="nav_button">
+                Help
+            </li>
+            <li class="nav_button">
+                Contact uploading and non-usersSettingsActivity log
+            </li>
+            
+
+
+        </ul>
+    </footer>
 </html>
