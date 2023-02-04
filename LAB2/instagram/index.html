@@ -157,12 +157,48 @@
             text-decoration: none;
         }
         .install{
-            position: relative;
+            position: absolute;
             top:575px;
-            left: 793px;
+            left: 805px;
             font-size: 15px;
             font-family: Arial, Helvetica, sans-serif;
         }
+        .play{
+            position: absolute;
+            width: 150px;
+            top: 620px;
+            left: 892px
+        }
+        .apple{
+            position: absolute;
+            width: 150px;
+            top:620px;
+            left:735px
+        }
+        .lan{
+            position: absolute;
+            top:730px;
+            left: 240px;
+            font-size: 12px;
+            color: #969696;
+            font-family: "Verdana";
+            list-style: none;
+            /* display:inline - block; */
+            overflow:auto;
+        }
+        .lan1{
+            position: absolute;
+            top:770px;
+            left: 520px;
+            font-size: 12px;
+            color: #969696;
+            font-family: "Verdana";
+            list-style: none;
+            /* display:inline - block; */
+            overflow:auto;
+        }
+        .nav_button {display:inline-block;margin: 5px;}
+        .nav_button1 {display:inline-block;margin: 5px;}
 
     </style>
 </head>
@@ -170,7 +206,7 @@
     <div class = "left">
         <img class = "phone" src = "https://i.ibb.co/ZzVsF7T/2023-02-03-16-50-21.png">
     </div>
-    <div class = "right">
+    <img class = "right">
         <fieldset class = "form">
             <img class="instagram" src ="https://i.ibb.co/0h49hhC/5a4e432a2da5ad73df7efe7a.png">
             <input class = "tel" type ="text" placeholder="Номер телефона,имя пользователя или...">
@@ -186,8 +222,46 @@
         <fieldset class = "reg">
             <h class = "reg1">У вас еще не аккаунта? <a class = "reg2" href = "">Зарегистрироваться</a></h>
         </fieldset>
-        <p class = "install">Установите приложение</p>
+        <p class = "install">Установите приложение.</p>
+        <a href = ""><img class = "apple" src = "https://static.cdninstagram.com/rsrc.php/v3/yt/r/Yfc020c87j0.png"></img></a>
+        <a href = ""><img class = "play" src = "https://static.cdninstagram.com/rsrc.php/v3/yz/r/c5Rp7Ym-Klz.png"></img></a>
     </div>
+    <footer>
+        <ul class = "lan">
+            <li class="nav_button">Meta
+            </li>
+            <li class="nav_button">About
+            </li>
+            <li class="nav_button">Blog
+            </li>
+            <li class="nav_button">Jobs
+            </li>
+            <li class="nav_button">Help
+            </li>
+            <li class="nav_button">API
+            </li>
+            <li class="nav_button">Privacy
+            </li>
+            <li class="nav_button">Terms
+            </li>
+            <li class="nav_button">Top accounts
+            </li>
+            <li class="nav_button">Locations
+            </li>
+            <li class="nav_button">Instagram Lite
+            </li>
+            <li class="nav_button">Contact uploading and non-users
+            </li>
+            <br>
+        </ul>
+        <ul class = "lan1">
+            <li class="nav_button1">English (UK)
+            </li>
+            <li class="nav_button1">© 2023 Instagram from Meta
+            </li>
+            <br>
+        </ul>
+    </footer>
     
 </body>
 </html>
