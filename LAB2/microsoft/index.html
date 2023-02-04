@@ -99,6 +99,17 @@
             color: #262626;
             font-weight: 50px;
         }
+        #search1{
+            text-decoration: none;
+            position: relative;
+            top:-5px;
+            left : 697px;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            color: #262626;
+            font-weight: 50px;
+        }
         #search:hover{
             /* text-decoration:underline; */
             border-bottom: 2px solid rgb(0, 0, 0);
@@ -113,8 +124,8 @@
             width: 21px;
             height: 21px;
             position: absolute;
-            top:11px;
-            left : 633px;
+            top:6px;
+            left : -7px;
         }
         .select{
             border: 0;
@@ -385,7 +396,7 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class = "head">
         <ul class = "navbar">
             <dev class = "left">
                 <li class = "navbarhover"><a id = "micro" href="https://www.microsoft.com/"><img class = "micro" src = "https://img-prod-cms-rt-microsoft-com.akamaized.net/cms/api/am/imageFileData/RE1Mu3b?ver=5c31"></a></li>
@@ -395,20 +406,24 @@
                 <li class = "navbarhover"><a id = "leftbuttons" href="https://support.microsoft.com/ru-kz">Поддержка</a></li>
             </dev>
             <dev class = "right">
-                <li class = "navbarhover"><a id = "vhod" href="https://www.microsoft.com/rpsauth/v1/account/SignIn?ru=https%3A%2F%2Fwww.microsoft.com%2Fru-kz%2F"><img class = "vhod" src = "https://i.ibb.co/StnCXP1/2023-02-04-16-10-48.png"></a></li>
                 <li class = "navbarhover">
-                    <a id = "search" href="">Поиск</a>
-                    <a class = "search" href=""><img class = "search" src = "https://i.ibb.co/m4x7yrB/2023-02-04-16-17-29.png"></a>
+                    <a id = "vhod" href="https://www.microsoft.com/rpsauth/v1/account/SignIn?ru=https%3A%2F%2Fwww.microsoft.com%2Fru-kz%2F"><img class = "vhod" src = "https://i.ibb.co/StnCXP1/2023-02-04-16-10-48.png"></a>
                 </li>
-                <select class = "select">
-                    <option value="" selected="selected" disabled="disabled">Продукты Майкрософт</option>
-                    <option value="1">Software</option>
-                    <option value="2">PCs & Devices</option>
-                    <option value="3">Развлечения</option>
-                    <option value="4">Для бизнеса</option>
-                    <option value="5">Для разработчиков и ИТ</option>
-                    <option value="6">Другое</option>
-                </select>
+                <li class = "navbarhover">
+                    <a id = "search1" href="">Поиск</a>
+                    <a id = "search" href=""><img class = "search" src = "https://i.ibb.co/m4x7yrB/2023-02-04-16-17-29.png"></a>
+                </li>
+                <li class = "navbarhover">
+                    <select class = "select">
+                        <option value="" selected="selected" disabled="disabled">Продукты Майкрософт</option>
+                        <option value="1">Software</option>
+                        <option value="2">PCs & Devices</option>
+                        <option value="3">Развлечения</option>
+                        <option value="4">Для бизнеса</option>
+                        <option value="5">Для разработчиков и ИТ</option>
+                        <option value="6">Другое</option>
+                    </select>
+                </li>
             </dev>
 
         </ul>
