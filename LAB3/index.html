@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo</title>
+    <style>
+        body{
+            background-image: url("https://4kwallpapers.com/images/wallpapers/gradient-background-backdrop-multicolor-colorful-vibrant-2560x1440-6723.png");
+            /* background-color: #6300f9; */
+        }
+        .top{
+            /* background-color: black; */
+            background-image: linear-gradient(20deg, #e23151, #f56977, #c189fc,#a44fff,#7112ff);
+            height: 50px;
+            border-radius: 3px;
+            border: 0.8px solid;
+            border-color: rgb(85, 85, 85);
+        }
+        #listinput{
+            position: relative;
+            left: 250px;
+            top:150px;
+            width: 600px;
+            height: 30px;
+            border-radius: 3px;
+            border: 0.8px solid;
+            border-color: rgb(85, 85, 85);
+        }
+        ::placeholder{
+            position: relative;
+            left: 20px;
+        }
+        .add{
+            position: relative;
+            left: 270px;
+            top:150px;
+            width: 50px;
+            border-radius: 3px;
+            border: 0.8px solid;
+            height: 30px;
+            border-color: rgb(85, 85, 85);
+            background-image: linear-gradient(20deg, #b1a7fb, #9285f8, #c189fc,#a44fff,#7112ff);
+            color: white;
+        }
+        .elem{
+            position:relative;
+            font-size:20px;
+            top:-46px;
+            font-family: Verdana;
+            color:black;
+            left:100px;
+            /* width: 300px; */
+            width: fit-content;
+        }
+        .add:hover{
+            background-image: linear-gradient(20deg, #8f81f7, #7a69f8, #965dd3,#7e24df,#6300f9);
+            cursor: pointer;
+        }
+        .list{
+            position: relative;
+            list-style: none;
+            width: 800px;
+            background-color: black;
+        }
+        .box{
+            border-radius: 4px;
+            position: relative;
+            width: 800px;
+            top:200px;
+            left: 300px;
+            /* background-color: rgb(183, 183, 183); */
+            background-image: linear-gradient(20deg, #e23151, #f56977, #c189fc,#a44fff,#7112ff);
+        }
+        .galochka{
+            position: relative;
+            
+        }
+        .trash{
+            width : 25px;
+            height : 25px;
+            position : relative;
+            top:-90px;
+            left : 700px;
+            z-index: -1;
+            border-width:0;
+            background:transparent
+        }
+        .trash:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class = "top">
+        <h style = "position: relative;color: rgb(0, 0, 0);left: 100px;top:13px;font-family:sans-serif;">ToDo List</h>
+    </header>
+    <div class = "middle">
+        <h style = "font-size: 30px;position: relative;left: 300px;top:100px;font-family:sans-serif;">ToDo List</h>
+        <input id = "listinput" placeholder = "New Task" type = "text">
+        <button onclick="addElements()" class = "add"><h>Add</h></button>
+        <fieldset class = "box">
+            <ul class = "list">
+            </ul>
+        </fieldset>
+    </div>
+    <script src="2.js"></script>
+</body>
+</html>
