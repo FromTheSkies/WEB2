@@ -45,14 +45,17 @@
             color: white;
         }
         .elem{
+            width: 800px;
             position:relative;
             font-size:20px;
             top:-46px;
             font-family: Verdana;
             color:black;
-            left:100px;
-            /* width: 300px; */
-            width: fit-content;
+            left:20px;
+            max-width:750px;
+            word-wrap: break-word
+            /* overflow:hidden; */
+            /* text-overflow:ellipsis */
         }
         .add:hover{
             background-image: linear-gradient(20deg, #8f81f7, #7a69f8, #965dd3,#7e24df,#6300f9);
@@ -62,7 +65,7 @@
             position: relative;
             list-style: none;
             width: 800px;
-            background-color: black;
+            /* background-color: black; */
         }
         .box{
             border-radius: 4px;
@@ -75,15 +78,16 @@
         }
         .galochka{
             position: relative;
+            left: -30px;
             
         }
         .trash{
             width : 25px;
             height : 25px;
             position : relative;
-            top:-90px;
-            left : 700px;
-            z-index: -1;
+            top: 0px;
+            left : 70px;
+            z-index: 1;
             border-width:0;
             background:transparent
         }
