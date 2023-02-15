@@ -11,14 +11,15 @@ function addElements(){
     let li = "";
 
     li = `<fieldset class ="box"><li id = "list">
-                <input  class = "no" class = "galochka" type = "checkbox" id = "item${index}">
+                <input class = "no" class = "galochka" type = "checkbox" id = "item${index}" onclick="cross(this)">
                 <p class = "elem">${listinput.value}</p>
                 <button class = "trash" onclick="deleteitem(${index})">
-                    
+                   <img src=""  
                 </button>
             </li></fieldset>`
     
     keyandstatus = [false, index,li]
+
     if(listinput.value){
 
         arr.push(keyandstatus)
@@ -30,11 +31,8 @@ function addElements(){
 
     taskBox.innerHTML += li;
     index ++
-    // display();
-    console.log(arr)
     
 }
-
 function display(){
 
     li = "";
@@ -42,8 +40,7 @@ function display(){
     taskBox.innerHTML = "";
 
     for(var i=0;i<arr.length;++i){
-        li += `${arr[i][2]}`;
-        // console.log(arr[i][2])
+        li += arr[i][2];
     }
 
     taskBox.innerHTML = li;
@@ -62,11 +59,11 @@ function deleteitem(id){
 
     display();
 }
-
-// function cross(){
-//     for(var i in elements){
-//         if(`item${id}` == elements[i][1] && elements[i][0]==true){
-            
-//         }
-//     }
-// }
+function cross(cb){
+    if(cb.checked == true){
+        document.querySelector(".elem").className="elemwith"
+    }
+    else{
+        document.querySelector(".elemwith").className="elem"
+    }
+}
