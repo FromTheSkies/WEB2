@@ -13,8 +13,8 @@ function addElements(){
     li = `<fieldset class ="box"><li id = "list">
                 <input class = "no" class = "galochka" type = "checkbox" id = "item${index}" onclick="cross(this,${index})">
                 <p class = "elem" id = "cb${index}">${listinput.value}</p>
-                <button class = "trash" onclick="deleteitem(${index})">
-                   <img src=""  
+                <button style = "background:transparent;"class = "trash" onclick="deleteitem(${index})">
+                   <img style = "position:relative;width:30px;height:30px;left:-9px;top:-5px;"src="https://i.ibb.co/QPhd9LQ/delete.png">  
                 </button>
             </li></fieldset>`
     
