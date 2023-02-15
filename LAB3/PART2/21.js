@@ -11,8 +11,8 @@ function addElements(){
     let li = "";
 
     li = `<fieldset class ="box"><li id = "list">
-                <input class = "no" class = "galochka" type = "checkbox" id = "item${index}" onclick="cross(this)">
-                <p class = "elem">${listinput.value}</p>
+                <input class = "no" class = "galochka" type = "checkbox" id = "item${index}" onclick="cross(this,${index})">
+                <p class = "elem" id = "cb${index}">${listinput.value}</p>
                 <button class = "trash" onclick="deleteitem(${index})">
                    <img src=""  
                 </button>
@@ -59,11 +59,21 @@ function deleteitem(id){
 
     display();
 }
-function cross(cb){
-    if(cb.checked == true){
-        document.querySelector(".elem").className="elemwith"
-    }
-    else{
-        document.querySelector(".elemwith").className="elem"
+function cross(cb,id){
+    for(var i=0;i<arr.length;++i){
+        if(arr[i][1] == id && cb.checked == true){
+            console.log(1)
+            document.getElementById(`cb${id}`).classList.remove('no');
+            document.getElementById(`cb${id}`).classList.add('yes');
+            arr[i][0]==false;
+            break;
+        }
+        else if(arr[i][1] == id && arr[i][0]==false && cb.checked == false){
+            console.log(0)
+            document.getElementById(`cb${id}`).classList.remove('yes');
+            document.getElementById(`cb${id}`).classList.add('no');
+            arr[i][0]==true;
+            break;
+        }
     }
 }
