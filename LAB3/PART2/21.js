@@ -1,21 +1,14 @@
 let listinput = document.getElementById("listinput")
 let taskBox = document.querySelector(".list")
 
-// var elements = {};/
+var arr = []
 
-var keyandstatus = [];
-
-const elements = new Map();
-
-var index = 0;
+var cnt = 0
+var index = 0
 
 function addElements(){
 
-    var cnt = 0;
-
     let li = "";
-
-    keyandstatus = [false,`item${index}`]
 
     li = `<fieldset class ="box"><li id = "list">
                 <input  class = "no" class = "galochka" type = "checkbox" id = "item${index}">
@@ -24,18 +17,21 @@ function addElements(){
                     
                 </button>
             </li></fieldset>`
-
+    
+    keyandstatus = [false, index,li]
     if(listinput.value){
 
-        elements.set(li,keyandstatus)
+        arr.push(keyandstatus)
 
-        index++;
+        cnt++;
     }
 
     listinput.value = null;
 
+    taskBox.innerHTML += li;
+    index ++
     // display();
-    taskBox.innerHTML += li
+    console.log(arr)
     
 }
 
@@ -45,32 +41,32 @@ function display(){
 
     taskBox.innerHTML = "";
 
-    for(var i in elements){
-        li += i;
+    for(var i=0;i<arr.length;++i){
+        li += `${arr[i][2]}`;
+        // console.log(arr[i][2])
     }
 
     taskBox.innerHTML = li;
 
 }
 function deleteitem(id){
-    var cnt = 0;
-    for(var i in elements){
-        if(`item${id}` == elements[i][1]){
-            elements.delete(i);
-            break;
+
+    console.log(id);
+
+    for(var i=0;i<arr.length;++i){
+        if(arr[i][1] == id){
+            arr.splice(i,1);
+            break
         }
     }
-    for(var i in elements){
-        elements[i][1]=`item${cnt}`
-        cnt++;
-    }
+
     display();
 }
 
-function cross(){
-    for(var i in elements){
-        if(`item${id}` == elements[i][1] && elements[i][0]==true){
+// function cross(){
+//     for(var i in elements){
+//         if(`item${id}` == elements[i][1] && elements[i][0]==true){
             
-        }
-    }
-}
+//         }
+//     }
+// }
