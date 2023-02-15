@@ -68,7 +68,7 @@ function cross(cb,id){
             arr[i][0]==false;
             break;
         }
-        else if(arr[i][1] == id && arr[i][0]==false && cb.checked == false){
+        else if(arr[i][1] == id  && cb.checked == false){
             console.log(0)
             document.getElementById(`cb${id}`).classList.remove('yes');
             document.getElementById(`cb${id}`).classList.add('no');
