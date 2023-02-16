@@ -18,7 +18,7 @@
             border: 0.8px solid;
             border-color: rgb(85, 85, 85);
         }
-        #listinput{
+        .listinput{
             position: relative;
             left: 250px;
             top:150px;
@@ -77,6 +77,7 @@
             position: relative;
             list-style: none;
             width: 800px;
+            top:150px;
             /* background-color: black; */
         }
         .box{
@@ -89,7 +90,7 @@
         }
         .galochka{
             position: relative;
-            left: -30px;
+            left: 0px;
             
         }
         .trash{
@@ -124,7 +125,7 @@
     </header>
     <div class = "middle">
         <h style = "font-size: 30px;position: relative;left: 300px;top:100px;font-family:sans-serif;">ToDo List</h>
-        <input id = "listinput" placeholder = "New Task" type = "text">
+        <input class = "listinput" placeholder = "New Task" type = "text">
         <button onclick="addElements()" class = "add"><h>Add</h></button>
         <ul class = "list">
         </ul>
