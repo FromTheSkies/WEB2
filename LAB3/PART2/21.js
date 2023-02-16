@@ -10,10 +10,8 @@ function addElements(){
 
     let li = "";
 
-    let value = "unchecked"
-
     li = `<fieldset class ="box"><li id = "list">
-                <input class = "galochka" ${value} type = "checkbox" id = "item${index}" onclick="cross(this,${index})">
+                <input class = "galochka" unchecked type = "checkbox" id = "item${index}" onclick="cross(this,${index})">
                 <p class = "elem no" id = "cb${index}">${listinput.value}</p>
                 <button style = "background:transparent;"class = "trash" onclick="deleteitem(${index})">
                    <img style = "position:relative;width:30px;height:30px;left:-9px;top:-5px;"src="https://i.ibb.co/QPhd9LQ/delete.png">  
@@ -44,7 +42,6 @@ function display(){
 
     for(var i=0;i<arr.length;++i){
         li += arr[i][2];
-        // taskBox.innerHTML += li;
     }
     taskBox.innerHTML = li;
 
@@ -70,7 +67,12 @@ function cross(cb,id){
             document.getElementById(`cb${id}`).classList.remove('no');
             document.getElementById(`cb${id}`).classList.add('yes');
             console.log(arr[i][2])
-            // document.getElementById(`item${id}`).checked = true;
+            var s = ""
+            s = arr[i][2];
+            var t = s.replace("unchecked","checked");
+            arr[i][2] = t;
+            console.log(arr[i][2])
+            document.getElementById(`item${id}`).checked = true;
             cb.checked == false
             arr[i][0]==false;
             break;
@@ -80,9 +82,15 @@ function cross(cb,id){
             document.getElementById(`cb${id}`).classList.remove('yes');
             document.getElementById(`cb${id}`).classList.add('no');
             console.log(arr[i][2])
-            // document.getElementById(`item${id}`).checked = false;
+            var s = ""
+            s = arr[i][2];
+            var t = s.replace("checked","unchecked");
+            arr[i][2] = t;
+            console.log(arr[i][2])
+            document.getElementById(`item${id}`).checked = false;
             arr[i][0]==true;
             break;
         }
     }
+    display()
 }
