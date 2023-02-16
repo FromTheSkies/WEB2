@@ -25,12 +25,11 @@ function addElements(){
 
         arr.push(keyandstatus)
 
-        cnt++;
+
+        listinput.value = null;
+
+        taskBox.innerHTML += li;
     }
-
-    listinput.value = null;
-
-    taskBox.innerHTML += li;
     index ++
     
 }
@@ -67,7 +66,6 @@ function cross(cb,id){
             var t = s.replace("unchecked","checked");
             var z = t.replace("none","line-through")
             arr[i][2] = z;
-            document.getElementById(`item${id}`).checked = true;
             cb.checked == false
             arr[i][0]==false;
             break;
@@ -77,7 +75,6 @@ function cross(cb,id){
             var t = s.replace("checked","unchecked");
             var z = t.replace("line-through","none")
             arr[i][2] = z;
-            document.getElementById(`item${id}`).checked = false;
             arr[i][0]==true;
 
             break;
