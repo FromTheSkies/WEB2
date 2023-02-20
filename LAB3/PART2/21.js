@@ -76,7 +76,6 @@ function cross(cb,id){
             var z = t.replace("line-through","none")
             arr[i][2] = z;
             arr[i][0]==true;
-
             break;
         }
     }

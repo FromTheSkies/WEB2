@@ -3,40 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>ToDo</title>
     <style>
         body{
             background-image: url("https://4kwallpapers.com/images/wallpapers/gradient-background-backdrop-multicolor-colorful-vibrant-2560x1440-6723.png");
             /* background-color: #6300f9; */
         }
-        .top{
-            /* background-color: black; */
+        
+        
+        .top {
             background-image: linear-gradient(20deg, #e23151, #f56977, #c189fc,#a44fff,#7112ff);
             height: 50px;
             border-radius: 3px;
             border: 0.8px solid;
             border-color: rgb(85, 85, 85);
         }
-        .listinput{
+        
+        .listinput {
             position: relative;
             left: 250px;
-            top:150px;
-            width: 600px;
+            width: 80%;
             height: 30px;
             border-radius: 3px;
             border: 0.8px solid;
             border-color: rgb(85, 85, 85);
         }
-        ::placeholder{
+        
+        ::placeholder {
             position: relative;
             left: 20px;
         }
-        .add{
+        
+        .add {
             position: relative;
             left: 270px;
-            top:150px;
-            width: 50px;
+            width: 20%;
             border-radius: 3px;
             border: 0.8px solid;
             height: 30px;
@@ -44,41 +46,38 @@
             background-image: linear-gradient(20deg, #b1a7fb, #9285f8, #c189fc,#a44fff,#7112ff);
             color: white;
         }
-        .elem{
-            width: 800px;
-            position:relative;
-            font-size:20px;
-            top:-46px;
+        
+        .elem {
+            width: 80%;
+            position: relative;
+            font-size: 2em;
             font-family: Verdana;
-            color:black;
-            left:20px;
-            max-width:750px;
-            word-wrap: break-word
-            /* overflow:hidden; */
-            /* text-overflow:ellipsis */
+            color: black;
+            max-width: 750px;
+            word-wrap: break-word;
         }
-        .elemwith{
-            width: 800px;
-            position:relative;
-            font-size:20px;
-            top:-46px;
+        
+        .elemwith {
+            width: 80%;
+            position: relative;
+            font-size: 2em;
             font-family: Verdana;
-            color:black;
-            left:20px;
-            max-width:750px;
+            color: black;
+            max-width: 750px;
             word-wrap: break-word;
             text-decoration: line-through;
         }
-        .add:hover{
+        
+        .add:hover {
             background-image: linear-gradient(20deg, #8f81f7, #7a69f8, #965dd3,#7e24df,#6300f9);
             cursor: pointer;
         }
-        .list{
+        
+        .list {
             position: relative;
             list-style: none;
-            width: 800px;
-            top:150px;
-            /* background-color: black; */
+            width: 80%;
+            margin: 0 auto;
         }
         .box{
             border-radius: 4px;
@@ -126,10 +125,10 @@
     <div class = "middle">
         <h style = "font-size: 30px;position: relative;left: 300px;top:100px;font-family:sans-serif;">ToDo List</h>
         <input class = "listinput" placeholder = "New Task" type = "text">
-        <button onclick="addElement()" class = "add"><h>Add</h></button>
+        <button onclick="addElements()" class = "add"><h>Add</h></button>
         <ul class = "list">
         </ul>
     </div>
-    <script src="22.js"></script>
+    <script src="21.js"></script>
 </body>
 </html>
