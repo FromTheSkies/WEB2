@@ -1,0 +1,24 @@
+<div class = "box" >
+
+    <h2>Product Details</h2>
+
+    <div *ngIf="product">
+        <img style = "position: absolute;top: 50%;right:10%;transform: translateY(-50%);float: right;max-width: 170px;" src = "{{product.linkImage}}">
+
+        <h3 style = "color: black;" >{{ product.name }}</h3>
+        <h4>{{ product.price | currency }}</h4>
+        <p>{{ product.description }}</p>
+        <button type="button" (click)="addToCart(product)">Buy</button>
+
+    
+    </div>
+</div>
+
+<div style = "background-color: rgb(243, 245, 249);" class = "box" *ngIf="product">
+    <img style = "width: 100%;" src = "{{product.linkSpecsImage}}">
+
+</div>
+
+
+<!-- . . . -->
+

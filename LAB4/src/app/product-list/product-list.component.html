@@ -1,0 +1,55 @@
+
+<div class = "box" *ngFor="let product of products">
+
+  <h3>
+    <a style = "font-size: 45px;" [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]">
+      {{ product.name }}
+    </a>
+  </h3>
+  <hr style = "border-width:1px;border-radius:5px;position:relative;color: gray solid;width: 30%;right: 20vw;">
+  <h5 style = "font-size: 20px;">Rating: {{product.rating}}</h5>
+  <h4>
+    <p style = "font-weight: 100;font-size: 20px;position:relative;top:4vw;font-family: Arial, Helvetica, sans-serif;">Price</p><br><p style = "font-weight: 200;font-size: 25px;color: black;">${{product.price}}</p>
+  </h4>
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+
+  <img style = "position: absolute;top: 50%;right:10%;transform: translateY(-50%);float: right;max-width: 200px;" src = "{{product.linkImage}}">
+
+  <div class="container-fluid py-3" *ngIf="product">
+  
+    <share-buttons theme="circles-dark"
+      [include]="['telegram','whatsapp']"
+      [showIcon]="true"
+      [showText]="false"
+      url="{{product.link}}"
+      description="Angular Share Buttons"
+      twitterAccount="rodrigokamada"
+      class="pt-5">
+    </share-buttons>
+  </div>
+
+  <!-- (click)="shareTelegram() -->
+
+  <!-- <button type="button" (click)="shareWhatsapp()">
+    <img src = "">
+  </button> -->
+
+  
+
+  <!-- <app-product-alerts
+    [product]="product"
+    (notify) = "onNotify()">
+  </app-product-alerts> -->
+
+
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->
