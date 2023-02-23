@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeFLASH</title>
+    <link href="https://i.ibb.co/0ZtCfQP/Pngtree-rabbit-vector-logo-design-creative-5177010.jpg" rel="icon"/>
+    <style>
+        .navbar{
+            position: relative;
+            width: 101vw;
+            top:-1vw;
+            height: 7vw;
+            box-shadow: 0px 0px 5px 0px black;
+            left: -1vw;
+        }
+        .bunny{
+            position: relative;
+            width: 6vw;
+            top: 0.5vw;
+            left:11.1vw;
+        }
+        #wordInput{
+            font-size: 20px;
+            top:5vw;
+            position: relative;
+            left: 27.5vw;
+            width: 40vw;
+            height: 2.5vw;
+            box-shadow:inset 1px 1px 1px 0px rgb(115, 115, 115);
+            border-radius: 5px;
+            border-width: 1px;
+        }
+        #start{
+            width: 2.8vw;
+            height: 2.8vw;
+            top:5vw;
+            position: relative;
+            left: 28vw;
+            background-color: rgb(114, 114, 216);
+            border-radius: 5px;
+            border-width: 1px;
+            color: aliceblue;
+            box-shadow:1px 0px 0px 0px rgb(0, 0, 0);
+            font-size: 20px;
+        }
+        #start:hover{
+            cursor: pointer;
+            background-color: rgb(73, 73, 161);
+            box-shadow:1px 1px 0px 0px rgb(0, 0, 0);
+        }
+        #start:active{
+            top:5.2vw;
+        }
+        #textWindow{
+            z-index: -4;
+            top:2vw;
+            position: relative;
+            width: 42.5vw;;
+            max-width: 43vw;
+            height: 20vw;
+            left: 27vw;
+            border-radius: 5px;
+            border-width: 0.8px;
+            border-color:rgb(73, 73, 161);
+        }
+        #text{
+            z-index: -4;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #wrongWord{
+            width: 6.7vw;
+            height: 1.5vw;
+            top:3.6vw;
+            position: relative;
+            left: 44.5vw;
+            background-color: rgb(182, 182, 249);
+            border-radius: 5px;
+            border-width: 0.5px;
+            color: aliceblue;
+            /* box-shadow:1px 0px 0px 0px rgb(0, 0, 0); */
+            font-size: 20px;
+
+        }
+        #wrongWordText{
+            font-size: 20px;
+            position:relative;
+            font-family: 'Times New Roman', Times, serif;
+            left: 0.1vw;
+            top:-1.3vw;
+            color: rgb(251, 0, 0);
+            text-align: center;
+        }
+
+        #timerButton{
+            text-align: center;
+            width: 1.8vw;
+            height: 1.2vw;
+            top:11vw;
+            position: relative;
+            left: 47vw;
+            background-color: rgb(182, 182, 249);
+            border-radius: 5px;
+            border-width: 0.5px;
+            color: aliceblue;
+            /* box-shadow:1px 0px 0px 0px rgb(0, 0, 0); */
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class = "navbar">
+            <img class = "bunny" src="https://i.ibb.co/0ZtCfQP/Pngtree-rabbit-vector-logo-design-creative-5177010.jpg" alt="">
+            <h style = "color: rgb(11, 11, 72);position:relative;left:9.1vw;z-index:3;top:-1vw;"><i>TypeFLASH</i></h>
+        </div>
+    </header>
+    <middle>
+        <fieldset id = "textWindow">
+            <p id = "text">
+                
+                
+            </p>
+        </fieldset>
+
+
+        
+        <input type="text" id = "wordInput" placeholder="Type words here..." onkeypress="checkForWord(event)">
+        <button id = "start" onclick="startOrReset()">ぶ</button>
+
+
+
+        <fieldset id = "timerButton">
+            <p id = "timerButtonText" style = "font-size: 22px;position:relative;font-family: 'Times New Roman', Times, serif;left: 0.0vw;top:-1.6vw;color: rgb(65, 65, 65);" class = "timerText">60</p>
+        </fieldset>
+
+        <fieldset id = "wrongWord">
+            <p id = "wrongWordText" ></p>
+        </fieldset>
+    </middle>
+    <script src = "1.js"></script>
+</body>
+</html>
