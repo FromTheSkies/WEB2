@@ -28,28 +28,6 @@ var intervalId
 
 var isPaused = false;
 
-// function stopTimer() {
-//     clearInterval(intervalId);
-//     // display.innerText = "";
-//     // cnt = 0;
-//     // isStarted = false;
-// }
-
-// function startTimer(duration, display) {
-//     var timer = duration;
-//     intervalId = setInterval(function time() {
-//       display.innerText = timer;
-//       if (timer == 0) {
-//         clearInterval(intervalId);
-//         congrates();
-//         text1array = []
-//         textOfBox.innerText = ""
-//         return;
-//       }
-//       timer--;
-//     }, 1000);
-// }
-
 function startTimer(duration, display) {
     var timer = duration;
     intervalId = setInterval(function time() {
@@ -61,7 +39,7 @@ function startTimer(duration, display) {
         textOfBox.innerText = ""
         return;
       }
-      if (!isPaused) { // only decrement the timer if the timer is not paused
+      if (!isPaused) {
         timer--;
       }
     }, 1000);
