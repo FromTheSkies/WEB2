@@ -1,0 +1,17 @@
+#categoryButtons{
+    position: relative;
+    padding: 4vw;
+    margin-left: 1vw;
+    display: inline-block;
+}
+#categoryBox{
+    border-radius: 15px;
+    height: 30vw;
+    width: 15vw;
+    border: 0.1vw solid black; 
+}
+#buttonsOfCategory{
+    position: relative;
+    top:26vw;
+    left: -0.3vw;
+}

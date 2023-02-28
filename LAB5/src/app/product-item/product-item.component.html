@@ -1,0 +1,7 @@
+<div id = "categoryButtons" *ngFor="let category of categories">
+    <fieldset id = "categoryBox" style = "background-image: url('{{category.image}}');background-size:cover;">
+        <button [routerLink]="['/productList']" id = "buttonsOfCategory" style="border-radius: 15px;" (click)="changeVal(category.name)" >
+            {{category.name}}
+        </button>
+    </fieldset>
+</div>
