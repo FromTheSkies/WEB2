@@ -1,0 +1,47 @@
+<div class = "box" *ngFor="let product of filteredProducts()">
+  <h3>
+    <a style = "font-size: 45px;" [title]="product.name + ' details'"
+      [routerLink]="['/products', product.id]">
+      {{ product.name }}
+    </a>
+  </h3>
+  <hr>
+  <h5 style = "font-size: 20px;">Rating: {{product.rating}}</h5>
+  <h4>
+    <p style = "font-weight: 100;font-size: 20px;position:relative;top:4vw;font-family: Arial, Helvetica, sans-serif;">Price</p><br><p style = "font-weight: 200;font-size: 25px;color: black;">${{product.price}}</p>
+  </h4>
+
+  
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+
+  <img class = "productImage" src = "{{product.linkImage}}">
+
+  <div class="container-fluid py-3" *ngIf="product">
+  
+    <share-buttons theme="circles-dark" 
+      [include]="['telegram','whatsapp']"
+      [showIcon]="true"
+      [showText]="false"
+      url="{{product.link}}"
+      description="Angular Share Buttons"
+      twitterAccount="rodrigokamada"
+      class="pt-5">
+    </share-buttons>
+  </div>
+
+
+  <button class = "like" id = "like" (click)="pressLike(product)"></button>
+  <p id = "numberOfLikes">{{product.likes}}</p>
+
+  <button class = "delete" id = "delete" (click)="delete(product.id)"></button>
+
+</div>
+
+<!-- 
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+-->

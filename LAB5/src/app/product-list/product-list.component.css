@@ -1,0 +1,57 @@
+.like{
+    background-image: url("https://cdn3.iconfinder.com/data/icons/font-awesome-regular-1/512/heart-128.png");
+    background-size: cover;
+    background-color: white;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top:-3vw;
+    left: 17vw;
+    width: 1.3vw;
+    height: 3.2vw;
+}
+
+.productImage{
+    position: absolute;
+    top: 50%;
+    right:10%;
+    transform: translateY(-50%);
+    float: right;
+    max-width: 150px;
+}
+hr{
+    border-width:1px;
+    border-radius:5px;
+    position:relative;
+    color: gray solid;
+    width: 30%;
+    right: 20vw;
+}
+
+#numberOfLikes{
+    position: relative;
+    top:-5vw;
+    left: 17.7vw;
+    font-size: 20px;
+}
+
+.delete{
+    position: relative;
+    background-image: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-trash-outline-128.png");
+    background-size: cover;
+    background-color: white;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 3vw;
+    height: 3.2vw;
+    left: 22vw;
+    top: -11vw
+}
+
+/*
+Copyright Google LLC. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at https://angular.io/license
+*/
