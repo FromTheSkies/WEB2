@@ -1,0 +1,11 @@
+<button (click)="returnBack()">Back</button>
+<div *ngIf="loaded">
+
+    <a [routerLink]="['/albums', album.id, 'photos']">
+        <h2>Album detail, number {{album.id}}</h2>
+        <h4>{{album.title}}</h4>
+    </a>
+    <input type="text" placeholder="Type new title for album..." [(ngModel)]="newTitle">
+    <button (click)="updateAlbum(album.id,album.userId)">Save new tittle</button>
+
+</div>

@@ -1,0 +1,8 @@
+<button (click) = "returnBack()">Retun back</button>
+<ul *ngIf="loaded1">
+    <li *ngFor = "let photo of photos">
+        {{photo.title}}
+        <br>
+        <img class = "photo" src = {{photo.url}}>
+    </li>
+</ul>
