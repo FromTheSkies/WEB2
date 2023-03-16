@@ -1,0 +1,1 @@
+print(str[2:]+str[:2])

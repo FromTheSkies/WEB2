@@ -1,0 +1,1 @@
+print(out[:1] + word + out[2:])

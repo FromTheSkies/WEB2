@@ -1,0 +1,2 @@
+nums.reverse()
+print(nums)

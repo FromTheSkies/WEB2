@@ -1,0 +1,1 @@
+print("kbut is the best(NO)")

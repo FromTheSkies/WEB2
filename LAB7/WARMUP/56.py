@@ -1,0 +1,1 @@
+print(goal%5)

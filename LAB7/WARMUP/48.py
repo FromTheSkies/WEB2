@@ -1,0 +1,1 @@
+print("Im tired of this tasks")
