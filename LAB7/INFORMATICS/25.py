@@ -1,0 +1,13 @@
+a = []
+b = int(input())
+
+a = input().split(" ")
+
+a = list(map(int, a))
+
+# print(a)
+
+
+for i in range(len(a)):
+    if a[i]%2==0:
+        print(a[i],end=" ")
