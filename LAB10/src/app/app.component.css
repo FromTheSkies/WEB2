@@ -1,0 +1,11 @@
+#li1,#li2{
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    padding: 20px;
+    margin-top: 20px;
+}
+#li2{
+    border: 2px solid rgb(255, 0, 0);
+}

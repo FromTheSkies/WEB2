@@ -1,0 +1,39 @@
+<!-- <fieldset>
+  <label>Company name: </label>
+  <input type="text" [(ngModel)]="newCompanyName">
+  <button (click)="addCompany()">Add company</button>
+</fieldset>
+
+<fieldset>
+  <label>Vacancy name: </label>
+  <input type="text" [(ngModel)]="newVacancyName">
+  <label>Company name of vacancy: </label>
+  <input type="text" [(ngModel)]="newIdOfCompany">
+  <button (click)="addVacancy()">Add vacancy</button>
+</fieldset> -->
+
+
+
+
+<ul>
+  <li id = "li1" *ngFor="let company of companies">
+    {{company.id}} - {{company.name}}
+    <input type = "text" placeholder="company name" [(ngModel)]="newCompanyName">
+    <button (click)="updateCompany(company.id)">UpdateCompany</button>
+
+    <button (click)="getVacanciesOfCompany(company.id)">Show Vacancies</button>
+    <button (click)="deleteCompany(company.id)">X</button>
+  </li>
+</ul>
+
+<p>VACANCIES:</p>
+
+<ul>
+  <li  id = "li2"*ngFor="let vacancy of vacancies">
+    {{vacancy.id}} - {{vacancy.name}}
+    <input type = "text" placeholder="vacancy name" [(ngModel)]="newVacancyName">
+    <button (click)="updateVacancy(vacancy.id)">UpdateVacancy</button>
+
+    <button (click)="deleteVacancy(vacancy.id)">X</button>
+  </li>
+</ul>
